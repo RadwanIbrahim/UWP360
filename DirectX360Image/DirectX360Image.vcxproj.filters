@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>643daf6a-14a2-48a7-8b57-d236017e26d9</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tga;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Animation">
+      <UniqueIdentifier>{1325afeb-45e2-4989-80fb-5b69fa733338}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Common">
+      <UniqueIdentifier>{51e5e923-3194-464c-af1a-7b87a83768dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="DirectXTex">
+      <UniqueIdentifier>{a0d39dec-a3eb-4184-90cd-aba085994517}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="pch.cpp" />
+    <ClCompile Include="Common\DirectXPanelBase.cpp">
+      <Filter>Common</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\DDSTextureLoader.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="DirectXTex\WICTextureLoader.cpp">
+      <Filter>DirectXTex</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="Transform.cpp" />
+    <ClCompile Include="Image360.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="pch.h" />
+    <ClInclude Include="Animation\Animation.h">
+      <Filter>Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DirectXHelper.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\DirectXPanelBase.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="Common\StepTimer.h">
+      <Filter>Common</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\DDSTextureLoader.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="ppltasks_extra.h" />
+    <ClInclude Include="VSD3DStarter.h" />
+    <ClInclude Include="DirectXTex\WICTextureLoader.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\PlatformHelpers.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\dds.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="DirectXTex\LoaderHelpers.h">
+      <Filter>DirectXTex</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="Transform.h" />
+    <ClInclude Include="Image360.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="Animation\SkinningVertexShader.hlsl">
+      <Filter>Animation</Filter>
+    </FxCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Sphere.cmo" />
+    <None Include="_Program Files (x86)_Microsoft Visual Studio_2017_Enterprise_Common7_IDE_Extensions_Microsoft_VsGraphics_Assets_Effects_Phong.dgsl.cso" />
+    <None Include="Phong.cso" />
+  </ItemGroup>
+</Project>

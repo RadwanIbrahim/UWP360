@@ -1,0 +1,18 @@
+﻿<Page x:Class="_360ImageTest.MainPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:local="using:_360ImageTest"
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+      xmlns:dx="using:DirectX360Image"
+      mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+        <dx:Image360  x:Name="Image_360"
+                      TextureSource="https://thenextweb.com/wp-content/blogs.dir/1/files/2015/06/Prague_Getty.jpg" />
+
+        <Button Content="Change image"
+                Click="OnClicked" />
+    </Grid>
+</Page>
