@@ -1,4 +1,4 @@
-# UWP 360 (panorama) Image Control
+# UWP 360 Image (panorama) Control
 
 -A small library to render a 360 image in a UWP application.
 
